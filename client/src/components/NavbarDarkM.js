@@ -11,7 +11,7 @@ const NavbarDarkM = () => {
 
     return (
         <nav className="navbar">
-          <h2>Dark</h2>
+          <h2 className='text'>Dark</h2>
           <div className="dark-mode__toggle">
               <div
               onClick={toggleMode}

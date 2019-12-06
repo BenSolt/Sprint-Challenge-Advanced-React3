@@ -9,13 +9,10 @@ import NavbarDarkM from './components/NavbarDarkM'
 function App() {
   return (
     <div className="App">
-      <h1>Womans World Cup</h1>
-
       <div className="Slider">
         <NavbarDarkM/>  
       </div>
-
-
+      <h1>Womans World Cup</h1>
       <PlayerCard/>
     </div>
   );

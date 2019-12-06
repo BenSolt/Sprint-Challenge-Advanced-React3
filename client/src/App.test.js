@@ -6,11 +6,11 @@ import PlayerCard from './components/PlayerCard';
 import NavbarDarkM from './components/NavbarDarkM'
 import {render} from '@testing-library/react';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+// it('renders without crashing', () => {
+//   const div = document.createElement('div');
+//   ReactDOM.render(<App />, div);
+//   ReactDOM.unmountComponentAtNode(div);
+// });
 
 test('navbar darkmode', () => {
   const nav = render(<NavbarDarkM />)
@@ -22,4 +22,33 @@ test('player card ', () => {
   console.log(card);
 })
 
+test('contains womans', () => {
+  const { getByText } = render(<App />);
+  getByText(/womans/i);
+});
 
+
+test('contains world', () => {
+  const { getByText } = render(<App />);
+  getByText(/world/i);
+});
+
+test('contains cup', () => {
+  const { getByText } = render(<App />);
+  getByText(/cup/i);
+});
+
+// test('contains name', () => {
+//   const { getByText } = render(<App />);
+//   getByText(/name/i);
+// });
+
+// test('contains  country', () => {
+//   const { getByText } = render(<App />);
+//   getByText(/country/i);
+// });
+
+// test('contains times searched', () => {
+//   const { getByText } = render(<App />);
+//   getByText(/times searched/i);
+// });
