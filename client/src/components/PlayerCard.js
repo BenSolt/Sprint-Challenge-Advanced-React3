@@ -20,14 +20,14 @@ class PlayerCard extends React.Component {
 
     render() {
         return (
-            
+
             <div>
       
             {this.state.players.map(player => 
             
             <div className="card1">
         
-            <h2>Name: {player.name[3]}</h2>
+            <h2>Name: {player.name}</h2>
             <h2>Country: {player.country}</h2>
             <h2>Times Searched: {player.searches}</h2> 
         
@@ -39,8 +39,6 @@ class PlayerCard extends React.Component {
         )
     }
 
-
-
-
-
 }
+
+export default PlayerCard;

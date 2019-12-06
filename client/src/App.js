@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './navbar.css'
+
+import PlayerCard from './components/PlayerCard';
+import NavbarDarkM from './components/NavbarDarkM'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Womans World Cup</h1>
+
+      <div className="Slider">
+        <NavbarDarkM/>  
+      </div>
+
+
+      <PlayerCard/>
     </div>
   );
 }
