@@ -38,6 +38,10 @@ test('contains cup', () => {
   getByText(/cup/i);
 });
 
+test('contains darkmode', () => {
+  const { getByText } = render(<App />);
+  getByText(/darkmode/i);
+});
 // test('contains name', () => {
 //   const { getByText } = render(<App />);
 //   getByText(/name/i);
