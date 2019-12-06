@@ -34,17 +34,15 @@ class PlayerCard extends React.Component {
 
         return (
       
-          <div>
+          <div className="cardholder">
       
-          {this.state.players.map(player => 
+        {this.state.players.map(player => 
           
-          <div className="card">
-      
-          <h2>Name: {player.name}</h2>
-          <h2>Country: {player.country}</h2>
-          <h2>Times Searched: {player.searches}</h2> 
-      
-          </div>
+        <div className="card">
+                <h2>Name: {player.name}</h2>
+                <h2>Country: {player.country}</h2>
+                <h2>Times Searched: {player.searches}</h2> 
+        </div>
           
           )}
       
